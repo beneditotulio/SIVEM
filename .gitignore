@@ -1,0 +1,12 @@
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+env/
+.env
+*.log
+dist/
+node_modules/
+dashboard/.vite/
+data/processed/*.csv
+data/processed/*.png
+data/processed/*.html
