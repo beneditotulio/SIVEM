@@ -123,21 +123,6 @@ Bibliotecas Python necessárias:
 - API: `fastapi`, `uvicorn`
 - Testes (opcional): `pytest`
 
-Instalação rápida (Windows):
-
-```
-python -m venv .venv
-.venv\\Scripts\\activate
-python -m pip install --upgrade pip
-pip install pandas numpy openpyxl scikit-learn joblib matplotlib seaborn fastapi uvicorn
-```
-
-Para a API apenas:
-
-```
-pip install -r api/requirements.txt
-```
-
 ### 1) Clonar
 
 ```
@@ -145,7 +130,21 @@ git clone https://github.com/beneditotulio/SIVEM.git
 cd SIVEM
 ```
 
-### 2) Pré-processar dados
+### 2) Preparar ambiente (Windows)
+
+```
+python -m venv .venv
+.venv\\Scripts\\activate
+python -m pip install --upgrade pip
+```
+
+### 3) Instalar dependências Python
+
+```
+pip install pandas numpy openpyxl scikit-learn joblib matplotlib seaborn
+```
+
+### 4) Pré-processar dados
 
 ```
 python scripts/preprocess.py
@@ -153,7 +152,7 @@ python scripts/preprocess.py
 
 Gera CSVs e figuras em `data/processed/`.
 
-### 3) Treinar modelo
+### 5) Treinar modelo
 
 ```
 python scripts/train.py
@@ -161,7 +160,7 @@ python scripts/train.py
 
 Salva o modelo em `model/sivem_model.pkl`.
 
-### 4) API (FastAPI)
+### 6) API (FastAPI)
 
 ```
 pip install -r api/requirements.txt
@@ -173,7 +172,7 @@ Endpoints:
 - `GET /health`
 - `POST /predict` body: `{ "features": [f1, f2, ...] }`
 
-### 5) Dashboard (React + Vite)
+### 7) Dashboard (React + Vite)
 
 ```
 cd dashboard
