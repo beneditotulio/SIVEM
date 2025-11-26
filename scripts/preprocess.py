@@ -3,8 +3,14 @@ import re
 import unicodedata
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
+try:
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    HAS_PLOT = True
+except Exception:
+    plt = None
+    sns = None
+    HAS_PLOT = False
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INPUT_PATH = os.path.join(BASE_DIR, 'data', 'raw', 'dados_de_incidentes_manifestacoes_mocambique_2024.xlsx')
@@ -86,7 +92,15 @@ def _split_types(s):
     return list(dict.fromkeys(parts))
 
 def main():
-    df = pd.read_excel(INPUT_PATH)
+    engine = None
+    try:
+        import openpyxl  # noqa: F401
+        engine = 'openpyxl'
+    except Exception:
+        msg = 'Dependencia ausente: openpyxl. Instale com "pip install openpyxl".'
+        print({'error': msg, 'file': INPUT_PATH})
+        return
+    df = pd.read_excel(INPUT_PATH, engine=engine)
     col_period = _find_col(df, ['period', 'periodo', 'período'])
     col_cases = _find_col(df, ['registered_cases', 'casos_registados', 'casos', 'registados'])
     col_type = _find_col(df, ['incident_type', 'tipo_incidente', 'tipo', 'incidente', 'incidentes'])
@@ -115,9 +129,10 @@ def main():
     wide_out = os.path.join(PROCESSED_DIR, 'incidentes_clean_wide.csv')
     df_long.to_csv(long_out, index=False)
     df_wide.to_csv(wide_out, index=False)
-    sns.set(style='whitegrid')
     figs = []
-    if df_wide['start_date'].notna().any():
+    if HAS_PLOT:
+        sns.set(style='whitegrid')
+    if HAS_PLOT and df_wide['start_date'].notna().any():
         weekly = df_wide[df_wide['start_date'].notna()].groupby(pd.Grouper(key='start_date', freq='W'))['registered_cases'].sum().reset_index()
         monthly = df_wide[df_wide['start_date'].notna()].groupby(pd.Grouper(key='start_date', freq='M'))['registered_cases'].sum().reset_index()
         f1 = plt.figure(figsize=(10,4))
@@ -140,7 +155,7 @@ def main():
         f2.savefig(p2)
         plt.close(f2)
         figs.append(p2)
-    if df_wide[col_province].notna().any():
+    if HAS_PLOT and df_wide[col_province].notna().any():
         prov_counts = df_wide[df_wide[col_province].notna()].groupby(col_province).size().reset_index(name='total_incidentes')
         f3 = plt.figure(figsize=(10,5))
         sns.barplot(x=col_province, y='total_incidentes', data=prov_counts)
@@ -152,7 +167,7 @@ def main():
         plt.close(f3)
         figs.append(p3)
     dist_types = df_long.groupby('types').size().reset_index(name='contagem')
-    if len(dist_types):
+    if HAS_PLOT and len(dist_types):
         f4 = plt.figure(figsize=(8,4))
         sns.barplot(x='types', y='contagem', data=dist_types)
         plt.title('Distribuicao dos tipos de incidente')
@@ -162,7 +177,7 @@ def main():
         f4.savefig(p4)
         plt.close(f4)
         figs.append(p4)
-    if df_long[col_province].notna().any():
+    if HAS_PLOT and df_long[col_province].notna().any():
         pivot = df_long[df_long[col_province].notna()].pivot_table(index=col_province, columns='types', values='registered_cases', aggfunc='sum', fill_value=0)
         f5 = plt.figure(figsize=(12,6))
         sns.heatmap(pivot, cmap='Reds', linewidths=0.5)
@@ -202,9 +217,10 @@ def main():
         f.write(dist_types_html)
         f.write('<h2>Analise descritiva dos casos registados</h2>')
         f.write(desc.to_html(index=False))
-        for p in figs:
-            rel = os.path.relpath(p, PROCESSED_DIR)
-            f.write(f'<h3>Figura: {os.path.basename(p)}</h3><img src="{rel}" style="max-width:100%;height:auto;"/>')
+        if HAS_PLOT:
+            for p in figs:
+                rel = os.path.relpath(p, PROCESSED_DIR)
+                f.write(f'<h3>Figura: {os.path.basename(p)}</h3><img src="{rel}" style="max-width:100%;height:auto;"/>')
         if val_errors:
             f.write('<h2>Validacao</h2><ul>')
             for e in val_errors:
