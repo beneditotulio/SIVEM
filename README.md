@@ -110,6 +110,34 @@ Coleta → Pré-processamento → Feature Engineering → Treino (Random Forest)
 
 ## 🚀 Como Executar
 
+### 🔧 Requisitos
+
+- Python 3.11
+- pip 25+
+- Node.js 18+ e npm
+- Git
+
+Bibliotecas Python necessárias:
+
+- Processamento/treino: `pandas>=2.3`, `numpy>=2.3`, `openpyxl`, `scikit-learn`, `joblib`, `matplotlib`, `seaborn`
+- API: `fastapi`, `uvicorn`
+- Testes (opcional): `pytest`
+
+Instalação rápida (Windows):
+
+```
+python -m venv .venv
+.venv\\Scripts\\activate
+python -m pip install --upgrade pip
+pip install pandas numpy openpyxl scikit-learn joblib matplotlib seaborn fastapi uvicorn
+```
+
+Para a API apenas:
+
+```
+pip install -r api/requirements.txt
+```
+
 ### 1) Clonar
 
 ```
