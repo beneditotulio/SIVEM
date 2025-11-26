@@ -74,7 +74,7 @@ Projeto desenvolvido para o DataWave 2025.
 
 ---
 
-## 🎯 Objetivo Principal
+## 🎯 Objectivo Principal
 
 Responder à pergunta: “Haverá incidentes amanhã?” através de um classificador treinado em dados de eventos, contexto e histórico temporal.
 
@@ -113,7 +113,7 @@ Coleta → Pré-processamento → Feature Engineering → Treino (Random Forest)
 ### 1) Clonar
 
 ```
-git clone https://github.com/SEU_USUARIO/SIVEM.git
+git clone https://github.com/beneditotulio/SIVEM.git
 cd SIVEM
 ```
 
@@ -175,7 +175,7 @@ O serviço comunica com a API em `http://localhost:8000` (configurado em `dashbo
 
 ## 👤 Autores
 
-- Túlio Benedito Nhantumbo — AI Engineer / Full Stack Developer
+- Túlio Benedito Nhantumbo — Enthusiast AI Engineer  / Full Stack Developer
 - Contribuidores DataWave 2025
 
 ---
