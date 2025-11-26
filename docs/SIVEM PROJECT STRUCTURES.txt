@@ -1,0 +1,50 @@
+SIVEM/
+│
+├── data/
+│   ├── raw/                 # Dados originais (não modificados)
+│   ├── processed/           # Dados limpos e prontos para o modelo
+│   └── external/            # Fontes externas (ONU, ACLED, INE, etc.)
+│
+├── notebooks/
+│   ├── 01_exploracao.ipynb          # EDA (Exploração dos Dados)
+│   ├── 02_preprocessamento.ipynb    # Limpeza, tratamento e engenharia de features
+│   ├── 03_treinamento_modelo.ipynb  # Treino e métricas do Random Forest
+│   ├── 04_avaliacao_modelo.ipynb    # Avaliação e matrizes de confusão
+│   └── 05_previsoes_futuras.ipynb   # Previsão de incidentes (output final)
+│
+├── model/
+│   ├── sivem_model.pkl           # Modelo treinado
+│   └── encoder.pkl               # Codificador das variáveis categóricas
+│
+├── api/
+│   ├── main.py                   # API FastAPI/Flask para servir o modelo
+│   ├── requirements.txt          # Bibliotecas da API
+│   └── utils/                    # Funções auxiliares
+│
+├── dashboard/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/api.js       # Ligação à API do modelo
+│   │   └── App.jsx
+│   └── package.json
+│
+├── docs/
+│   ├── arquitectura_do_sistema.pdf
+│   ├── metodologia_datawave.pdf
+│   └── apresentacao_evento.pptx
+│
+├── scripts/
+│   ├── preprocess.py             # Script de limpeza de dados
+│   ├── train.py                  # Script de treino do modelo
+│   └── predict.py                # Script para prever incidentes
+│
+├── tests/
+│   ├── test_api.py
+│   ├── test_preprocess.py
+│   └── test_model.py
+│
+├── .gitignore
+├── LICENSE
+└── README.md
