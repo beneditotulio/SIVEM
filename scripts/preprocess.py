@@ -42,22 +42,31 @@ def _parse_period(val):
     m_single = re.search(r'(\d{1,2})\/(\d{1,2})\/(\d{4})', s)
     if m_single:
         d, m, y = m_single.groups()
+        y = int(y)
+        if y == 2004:
+            y = 2024
         try:
-            return pd.Timestamp(year=int(y), month=int(m), day=int(d))
+            return pd.Timestamp(year=y, month=int(m), day=int(d))
         except Exception:
             return pd.NaT
     m_range = re.search(r'(\d{1,2})\s*[-]\s*(\d{1,2})\/(\d{1,2})\/(\d{4})', s)
     if m_range:
         d1, d2, m, y = m_range.groups()
+        y = int(y)
+        if y == 2004:
+            y = 2024
         try:
-            return pd.Timestamp(year=int(y), month=int(m), day=int(d1))
+            return pd.Timestamp(year=y, month=int(m), day=int(d1))
         except Exception:
             return pd.NaT
     m_alt = re.search(r'(\d{1,2}).*?(\d{1,2})\/(\d{4})', s)
     if m_alt:
         d1, m, y = m_alt.groups()
+        y = int(y)
+        if y == 2004:
+            y = 2024
         try:
-            return pd.Timestamp(year=int(y), month=int(m), day=int(d1))
+            return pd.Timestamp(year=y, month=int(m), day=int(d1))
         except Exception:
             return pd.NaT
     return pd.NaT
@@ -116,6 +125,7 @@ def main():
         if 'province' not in df.columns:
             df[col_province] = np.nan
     df['start_date'] = df[col_period].apply(_parse_period)
+    df['start_date'] = df['start_date'].apply(lambda t: t.replace(year=2024) if (not pd.isna(t) and t.year == 2004) else t)
     df['registered_cases'] = pd.to_numeric(df[col_cases], errors='coerce')
     df['registered_cases'] = df['registered_cases'].fillna(0).astype(int)
     df['types'] = df[col_type].apply(_split_types)
