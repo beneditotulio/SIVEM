@@ -1,6 +1,7 @@
 import os
 import joblib
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import numpy as np
 import pandas as pd
@@ -9,6 +10,19 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODEL_PATH = os.path.join(BASE_DIR, 'model', 'sivem_model.pkl')
 
 app = FastAPI()
+origins = [
+    'http://localhost:5173',
+    'http://127.0.0.1:5173',
+    'http://localhost:3000',
+    'http://127.0.0.1:3000',
+]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=['*'],
+    allow_headers=['*'],
+)
 
 class PredictBody(BaseModel):
     features: list | None = None
@@ -59,4 +73,3 @@ def predict(body: PredictBody):
         proba = None
     pred = int(model.predict(X)[0])
     return {'prediction': pred, 'probability': proba}
-
