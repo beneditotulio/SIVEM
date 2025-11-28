@@ -1,0 +1,374 @@
+period,country,province,phase,stage,registered_cases,incident_type
+21-25/10/2024,Mozambique,Cabo Delgado,1 - 2 Fase,,16,Detencoes
+15/11/2024,Mozambique,Cabo Delgado,4 Fase,1 Etapa,1,Detencoes
+16-17/11/2024,Mozambique,Cabo Delgado,4 Fase,1 Etapa,0,Detencoes
+18/11/2024,Mozambique,Cabo Delgado,4 Fase,1 Etapa,0,Detencoes
+19-20/11/2024,Mozambique,Cabo Delgado,4 Fase,2 Etapa,0,Detencoes
+21-25/11/2024,Mozambique,Cabo Delgado,4 Fase,2 Etapa,0,Detencoes
+05-09/12/2024,Mozambique,Cabo Delgado,4 Fase,4 Etapa,1,Detencoes
+10-14/12/2024,Mozambique,Cabo Delgado,4 Fase,4 Etapa,1,Detencoes
+26/12/2024,Mozambique,Cabo Delgado,V8,,7,Detencoes
+27-29/12/2024,Mozambique,Cabo Delgado,V8,,0,Detencoes
+4/12/2024,Mozambique,Cabo Delgado,4 Fase,4 Etapa,21,Baleamentos
+05-09/12/2024,Mozambique,Cabo Delgado,4 Fase,4 Etapa,1,Baleamentos
+10-14/12/2024,Mozambique,Cabo Delgado,4 Fase,4 Etapa,1,Baleamentos
+23-24/12/2024,Mozambique,Cabo Delgado,V8,,3,Baleamentos
+25/12/2024,Mozambique,Cabo Delgado,V8,,5,Baleamentos
+26/12/2024,Mozambique,Cabo Delgado,V8,,0,Baleamentos
+27-29/12/2024,Mozambique,Cabo Delgado,V8,,0,Baleamentos
+4/12/2024,Mozambique,Cabo Delgado,4 Fase,4 Etapa,2,Mortes
+05-09/12/2024,Mozambique,Cabo Delgado,4 Fase,4 Etapa,1,Mortes
+10-14/12/2024,Mozambique,Cabo Delgado,4 Fase,4 Etapa,0,Mortes
+25/12/2024,Mozambique,Cabo Delgado,V8,,4,Mortes
+26/12/2024,Mozambique,Cabo Delgado,V8,,1,Mortes
+27-29/12/2024,Mozambique,Cabo Delgado,V8,,0,Mortes
+21-25/10/2024,Mozambique,Gaza,1 - 2 Fase,,24,Detencoes
+04-05/11/2024,Mozambique,Gaza,3 Fase,,21,Detencoes
+7/11/2024,Mozambique,Gaza,3 Fase,,1,Detencoes
+14/11/2024,Mozambique,Gaza,4 Fase,1 Etapa,5,Detencoes
+15/11/2024,Mozambique,Gaza,4 Fase,1 Etapa,3,Detencoes
+16-17/11/2024,Mozambique,Gaza,4 Fase,1 Etapa,15,Detencoes
+18/11/2024,Mozambique,Gaza,4 Fase,1 Etapa,0,Detencoes
+19-20/11/2024,Mozambique,Gaza,4 Fase,2 Etapa,0,Detencoes
+21-25/11/2024,Mozambique,Gaza,4 Fase,2 Etapa,6,Detencoes
+29/11/2024,Mozambique,Gaza,4 Fase,3 Etapa,4,Detencoes
+4/12/2024,Mozambique,Gaza,4 Fase,4 Etapa,21,Detencoes
+05-09/12/2024,Mozambique,Gaza,4 Fase,4 Etapa,4,Detencoes
+10-14/12/2024,Mozambique,Gaza,4 Fase,4 Etapa,0,Detencoes
+26/12/2024,Mozambique,Gaza,V8,,4,Detencoes
+27-29/12/2024,Mozambique,Gaza,V8,,0,Detencoes
+21-25/11/2024,Mozambique,Gaza,4 Fase,2 Etapa,3,Baleamentos
+29/11/2024,Mozambique,Gaza,4 Fase,3 Etapa,1,Baleamentos
+4/12/2024,Mozambique,Gaza,4 Fase,4 Etapa,4,Baleamentos
+05-09/12/2024,Mozambique,Gaza,4 Fase,4 Etapa,10,Baleamentos
+10-14/12/2024,Mozambique,Gaza,4 Fase,4 Etapa,7,Baleamentos
+4/12/2024,Mozambique,Gaza,4 Fase,4 Etapa,1,Mortes
+05-09/12/2024,Mozambique,Gaza,4 Fase,4 Etapa,9,Mortes
+10-14/12/2024,Mozambique,Gaza,4 Fase,4 Etapa,0,Mortes
+21-25/10/2024,Mozambique,Inhambane,1 - 2 Fase,,2,Detencoes
+04-05/11/2024,Mozambique,Inhambane,3 Fase,,4,Detencoes
+7/11/2024,Mozambique,Inhambane,3 Fase,,17,Detencoes
+15/11/2024,Mozambique,Inhambane,4 Fase,1 Etapa,2,Detencoes
+16-17/11/2024,Mozambique,Inhambane,4 Fase,1 Etapa,2,Detencoes
+18/11/2024,Mozambique,Inhambane,4 Fase,1 Etapa,0,Detencoes
+19-20/11/2024,Mozambique,Inhambane,4 Fase,2 Etapa,0,Detencoes
+21-25/11/2024,Mozambique,Inhambane,4 Fase,2 Etapa,18,Detencoes
+29/11/2024,Mozambique,Inhambane,4 Fase,3 Etapa,9,Detencoes
+05-09/12/2024,Mozambique,Inhambane,4 Fase,4 Etapa,2,Detencoes
+10-14/12/2024,Mozambique,Inhambane,4 Fase,4 Etapa,0,Detencoes
+25/12/2024,Mozambique,Inhambane,V8,,1,Detencoes
+26/12/2024,Mozambique,Inhambane,V8,,1,Detencoes
+27-29/12/2024,Mozambique,Inhambane,V8,,0,Detencoes
+7/11/2024,Mozambique,Inhambane,3 Fase,,3,Baleamentos
+21-25/11/2024,Mozambique,Inhambane,4 Fase,2 Etapa,3,Baleamentos
+28/11/2024,Mozambique,Inhambane,4 Fase,3 Etapa,3,Baleamentos
+29/11/2024,Mozambique,Inhambane,4 Fase,3 Etapa,4,Baleamentos
+4/12/2024,Mozambique,Inhambane,4 Fase,4 Etapa,2,Baleamentos
+05-09/12/2024,Mozambique,Inhambane,4 Fase,4 Etapa,0,Baleamentos
+10-14/12/2024,Mozambique,Inhambane,4 Fase,4 Etapa,0,Baleamentos
+25/12/2024,Mozambique,Inhambane,V8,,3,Baleamentos
+26/12/2024,Mozambique,Inhambane,V8,,0,Baleamentos
+27-29/12/2024,Mozambique,Inhambane,V8,,1,Baleamentos
+7/11/2024,Mozambique,Inhambane,3 Fase,,1,Mortes
+29/11/2024,Mozambique,Inhambane,4 Fase,3 Etapa,1,Mortes
+4/12/2024,Mozambique,Inhambane,4 Fase,4 Etapa,1,Mortes
+05-09/12/2024,Mozambique,Inhambane,4 Fase,4 Etapa,0,Mortes
+10-14/12/2024,Mozambique,Inhambane,4 Fase,4 Etapa,0,Mortes
+7/11/2024,Angola,Luanda,3 Fase,,7,Detencoes
+21-25/10/2024,Mozambique,Manica,1 - 2 Fase,,76,Detencoes
+04-05/11/2024,Mozambique,Manica,3 Fase,,16,Detencoes
+7/11/2024,Mozambique,Manica,3 Fase,,1,Detencoes
+13/11/2004,Mozambique,Manica,4 Fase,1 Etapa,9,Detencoes
+14/11/2024,Mozambique,Manica,4 Fase,1 Etapa,0,Detencoes
+15/11/2024,Mozambique,Manica,4 Fase,1 Etapa,0,Detencoes
+16-17/11/2024,Mozambique,Manica,4 Fase,1 Etapa,0,Detencoes
+18/11/2024,Mozambique,Manica,4 Fase,1 Etapa,21,Detencoes
+19-20/11/2024,Mozambique,Manica,4 Fase,2 Etapa,0,Detencoes
+21-25/11/2024,Mozambique,Manica,4 Fase,2 Etapa,0,Detencoes
+4/12/2024,Mozambique,Manica,4 Fase,4 Etapa,3,Detencoes
+05-09/12/2024,Mozambique,Manica,4 Fase,4 Etapa,42,Detencoes
+10-14/12/2024,Mozambique,Manica,4 Fase,4 Etapa,10,Detencoes
+23-24/12/2024,Mozambique,Manica,V8,,5,Detencoes
+25/12/2024,Mozambique,Manica,V8,,0,Detencoes
+26/12/2024,Mozambique,Manica,V8,,0,Detencoes
+27-29/12/2024,Mozambique,Manica,V8,,0,Detencoes
+04-05/11/2024,Mozambique,Manica,3 Fase,,1,Baleamentos
+15/11/2024,Mozambique,Manica,4 Fase,1 Etapa,3,Baleamentos
+16-17/11/2024,Mozambique,Manica,4 Fase,1 Etapa,1,Baleamentos
+18/11/2024,Mozambique,Manica,4 Fase,1 Etapa,11,Baleamentos
+19-20/11/2024,Mozambique,Manica,4 Fase,2 Etapa,0,Baleamentos
+21-25/11/2024,Mozambique,Manica,4 Fase,2 Etapa,0,Baleamentos
+10-14/12/2024,Mozambique,Manica,4 Fase,4 Etapa,6,Baleamentos
+26/12/2024,Mozambique,Manica,V8,,2,Baleamentos
+27-29/12/2024,Mozambique,Manica,V8,,0,Baleamentos
+21-25/10/2024,Mozambique,Manica,1 - 2 Fase,,3,Mortes
+21-27/10/2024,Mozambique,Manica,1 - 2 Fase,,3,Mortes
+16-17/11/2024,Mozambique,Manica,4 Fase,1 Etapa,1,Mortes
+18/11/2024,Mozambique,Manica,4 Fase,1 Etapa,1,Mortes
+19-20/11/2024,Mozambique,Manica,4 Fase,2 Etapa,1,Mortes
+21-25/11/2024,Mozambique,Manica,4 Fase,2 Etapa,0,Mortes
+10-14/12/2024,Mozambique,Manica,4 Fase,4 Etapa,2,Mortes
+27-29/12/2024,Mozambique,Manica,V8,,1,Mortes
+21-25/10/2024,Mozambique,Maputo Cidade,1 - 2 Fase,,62,Detencoes
+21-25/10/2024,Mozambique,Maputo Provincia,1 - 2 Fase,,43,Detencoes
+21-25/10/2024,Mozambique,Maputo Cidade,1 - 2 Fase,,3,Mortes
+04-05/11/2024,Mozambique,Maputo Cidade,3 Fase,,36,Detencoes
+7/11/2024,Mozambique,Maputo Cidade,3 Fase,,126,Detencoes
+14/11/2024,Mozambique,Maputo Cidade,4 Fase,1 Etapa,2,Detencoes
+15/11/2024,Mozambique,Maputo Cidade,4 Fase,1 Etapa,12,Detencoes
+16-17/11/2024,Mozambique,Maputo Cidade,4 Fase,1 Etapa,8,Detencoes
+18/11/2024,Mozambique,Maputo Cidade,4 Fase,1 Etapa,7,Detencoes
+19-20/11/2024,Mozambique,Maputo Cidade,4 Fase,2 Etapa,32,Detencoes
+21-25/11/2024,Mozambique,Maputo Cidade,4 Fase,2 Etapa,1,Detencoes
+29/11/2024,Mozambique,Maputo Cidade,4 Fase,3 Etapa,2,Detencoes
+4/12/2024,Mozambique,Maputo Cidade,4 Fase,4 Etapa,16,Detencoes
+05-09/12/2024,Mozambique,Maputo Cidade,4 Fase,4 Etapa,1,Detencoes
+10-14/12/2024,Mozambique,Maputo Cidade,4 Fase,4 Etapa,4,Detencoes
+23-24/12/2024,Mozambique,Maputo Cidade,V8,,37,Detencoes
+25/12/2024,Mozambique,Maputo Cidade,V8,,3,Detencoes
+26/12/2024,Mozambique,Maputo Cidade,V8,,1,Detencoes
+27-29/12/2024,Mozambique,Maputo Cidade,V8,,5,Detencoes
+04-05/11/2024,Mozambique,Maputo Cidade,3 Fase,,9,Baleamentos
+7/11/2024,Mozambique,Maputo Cidade,3 Fase,,77,Baleamentos
+15/11/2024,Mozambique,Maputo Cidade,4 Fase,1 Etapa,4,Baleamentos
+16-17/11/2024,Mozambique,Maputo Cidade,4 Fase,1 Etapa,1,Baleamentos
+18/11/2024,Mozambique,Maputo Cidade,4 Fase,1 Etapa,0,Baleamentos
+19-20/11/2024,Mozambique,Maputo Cidade,4 Fase,2 Etapa,0,Baleamentos
+21-25/11/2024,Mozambique,Maputo Cidade,4 Fase,2 Etapa,2,Baleamentos
+27/11/2004,Mozambique,Maputo Cidade,4 Fase,3 Etapa,2,Baleamentos
+29/11/2024,Mozambique,Maputo Cidade,4 Fase,3 Etapa,1,Baleamentos
+10-14/12/2024,Mozambique,Maputo Cidade,4 Fase,4 Etapa,2,Baleamentos
+23-24/12/2024,Mozambique,Maputo Cidade,V8,,15,Baleamentos
+25/12/2024,Mozambique,Maputo Cidade,V8,,41,Baleamentos
+26/12/2024,Mozambique,Maputo Cidade,V8,,6,Baleamentos
+27-29/12/2024,Mozambique,Maputo Cidade,V8,,0,Baleamentos
+04-05/11/2024,Mozambique,Maputo Cidade,3 Fase,,1,Mortes
+7/11/2024,Mozambique,Maputo Cidade,3 Fase,,5,Mortes
+15/11/2024,Mozambique,Maputo Cidade,4 Fase,1 Etapa,4,Mortes
+16-17/11/2024,Mozambique,Maputo Cidade,4 Fase,1 Etapa,1,Mortes
+18/11/2024,Mozambique,Maputo Cidade,4 Fase,1 Etapa,0,Mortes
+19-20/11/2024,Mozambique,Maputo Cidade,4 Fase,2 Etapa,0,Mortes
+10-14/12/2024,Mozambique,Maputo Cidade,4 Fase,4 Etapa,2,Mortes
+23-24/12/2024,Mozambique,Maputo Cidade,V8,,1,Mortes
+25/12/2024,Mozambique,Maputo Cidade,V8,,3,Mortes
+26/12/2024,Mozambique,Maputo Cidade,V8,,32,Mortes
+27-29/12/2024,Mozambique,Maputo Cidade,V8,,1,Mortes
+04-05/11/2024,Mozambique,Maputo Provincia,3 Fase,,25,Detencoes
+7/11/2024,Mozambique,Maputo Provincia,3 Fase,,8,Detencoes
+14/11/2024,Mozambique,Maputo Provincia,4 Fase,1 Etapa,3,Detencoes
+15/11/2024,Mozambique,Maputo Provincia,4 Fase,1 Etapa,1,Detencoes
+16-17/11/2024,Mozambique,Maputo Provincia,4 Fase,1 Etapa,1,Detencoes
+18/11/2024,Mozambique,Maputo Provincia,4 Fase,1 Etapa,2,Detencoes
+19-20/11/2024,Mozambique,Maputo Provincia,4 Fase,2 Etapa,2,Detencoes
+21-25/11/2024,Mozambique,Maputo Provincia,4 Fase,2 Etapa,33,Detencoes
+29/11/2024,Mozambique,Maputo Provincia,4 Fase,3 Etapa,16,Detencoes
+4/12/2024,Mozambique,Maputo Provincia,4 Fase,4 Etapa,1,Detencoes
+05-09/12/2024,Mozambique,Maputo Provincia,4 Fase,4 Etapa,2,Detencoes
+10-14/12/2024,Mozambique,Maputo Provincia,4 Fase,4 Etapa,10,Detencoes
+23-24/12/2024,Mozambique,Maputo Provincia,V8,,2,Detencoes
+25/12/2024,Mozambique,Maputo Provincia,V8,,7,Detencoes
+26/12/2024,Mozambique,Maputo Provincia,V8,,13,Detencoes
+27-29/12/2024,Mozambique,Maputo Provincia,V8,,1,Detencoes
+04-05/11/2024,Mozambique,Maputo Provincia,3 Fase,,6,Baleamentos
+7/11/2024,Mozambique,Maputo Provincia,3 Fase,,1,Baleamentos
+13-14/11/2024,Mozambique,Maputo Provincia,4 Fase,1 Etapa,2,Baleamentos
+15/11/2024,Mozambique,Maputo Provincia,4 Fase,1 Etapa,1,Baleamentos
+16-17/11/2024,Mozambique,Maputo Provincia,4 Fase,1 Etapa,0,Baleamentos
+18/11/2024,Mozambique,Maputo Provincia,4 Fase,1 Etapa,0,Baleamentos
+19-20/11/2024,Mozambique,Maputo Provincia,4 Fase,2 Etapa,0,Baleamentos
+21-25/11/2024,Mozambique,Maputo Provincia,4 Fase,2 Etapa,3,Baleamentos
+28/11/2024,Mozambique,Maputo Provincia,4 Fase,3 Etapa,3,Baleamentos
+29/11/2024,Mozambique,Maputo Provincia,4 Fase,3 Etapa,2,Baleamentos
+4/12/2024,Mozambique,Maputo Provincia,4 Fase,4 Etapa,1,Baleamentos
+05-09/12/2024,Mozambique,Maputo Provincia,4 Fase,4 Etapa,2,Baleamentos
+10-14/12/2024,Mozambique,Maputo Provincia,4 Fase,4 Etapa,17,Baleamentos
+23-24/12/2024,Mozambique,Maputo Provincia,V8,,2,Baleamentos
+25/12/2024,Mozambique,Maputo Provincia,V8,,1,Baleamentos
+26/12/2024,Mozambique,Maputo Provincia,V8,,34,Baleamentos
+27-29/12/2024,Mozambique,Maputo Provincia,V8,,0,Baleamentos
+04-05/11/2024,Mozambique,Maputo Provincia,3 Fase,,3,Mortes
+7/11/2024,Mozambique,Maputo Provincia,3 Fase,,1,Mortes
+13-14/11/2024,Mozambique,Maputo Provincia,4 Fase,1 Etapa,1,Mortes
+15/11/2024,Mozambique,Maputo Provincia,4 Fase,1 Etapa,8,Mortes
+16-17/11/2024,Mozambique,Maputo Provincia,4 Fase,1 Etapa,1,Mortes
+18/11/2024,Mozambique,Maputo Provincia,4 Fase,1 Etapa,0,Mortes
+19-20/11/2024,Mozambique,Maputo Provincia,4 Fase,2 Etapa,0,Mortes
+21-25/11/2024,Mozambique,Maputo Provincia,4 Fase,2 Etapa,0,Mortes
+29/11/2024,Mozambique,Maputo Provincia,4 Fase,3 Etapa,2,Mortes
+4/12/2024,Mozambique,Maputo Provincia,4 Fase,4 Etapa,1,Mortes
+05-09/12/2024,Mozambique,Maputo Provincia,4 Fase,4 Etapa,3,Mortes
+10-14/12/2024,Mozambique,Maputo Provincia,4 Fase,4 Etapa,6,Mortes
+23-24/12/2024,Mozambique,Maputo Provincia,V8,,1,Mortes
+25/12/2024,Mozambique,Maputo Provincia,V8,,1,Mortes
+26/12/2024,Mozambique,Maputo Provincia,V8,,18,Mortes
+27-29/12/2024,Mozambique,Maputo Provincia,V8,,0,Mortes
+21-25/10/2024,Mozambique,Nampula,1 - 2 Fase,,54,Detencoes
+04-05/11/2024,Mozambique,Nampula,3 Fase,,38,Detencoes
+7/11/2024,Mozambique,Nampula,3 Fase,,27,Detencoes
+13/11/2004,Mozambique,Nampula,4 Fase,1 Etapa,5,Detencoes
+14/11/2024,Mozambique,Nampula,4 Fase,1 Etapa,0,Detencoes
+15/11/2024,Mozambique,Nampula,4 Fase,1 Etapa,0,Detencoes
+16-17/11/2024,Mozambique,Nampula,4 Fase,1 Etapa,1,Detencoes
+18/11/2024,Mozambique,Nampula,4 Fase,1 Etapa,2,Detencoes
+19-20/11/2024,Mozambique,Nampula,4 Fase,2 Etapa,2,Detencoes
+21-25/11/2024,Mozambique,Nampula,4 Fase,2 Etapa,2,Detencoes
+27-28/11/2024,Mozambique,Nampula,4 Fase,3 Etapa,1,Detencoes
+29/11/2024,Mozambique,Nampula,4 Fase,3 Etapa,19,Detencoes
+4/12/2024,Mozambique,Nampula,4 Fase,4 Etapa,3,Detencoes
+05-09/12/2024,Mozambique,Nampula,4 Fase,4 Etapa,27,Detencoes
+10-14/12/2024,Mozambique,Nampula,4 Fase,4 Etapa,1,Detencoes
+23-24/12/2024,Mozambique,Nampula,V8,,1,Detencoes
+25/12/2024,Mozambique,Nampula,V8,,3,Detencoes
+26/12/2024,Mozambique,Nampula,V8,,0,Detencoes
+27-29/12/2024,Mozambique,Nampula,V8,,1,Detencoes
+04-05/11/2024,Mozambique,Nampula,3 Fase,,26,Baleamentos
+13-14/11/2024,Mozambique,Nampula,4 Fase,1 Etapa,10,Baleamentos
+15/11/2024,Mozambique,Nampula,4 Fase,1 Etapa,0,Baleamentos
+16-17/11/2024,Mozambique,Nampula,4 Fase,1 Etapa,0,Baleamentos
+18/11/2024,Mozambique,Nampula,4 Fase,1 Etapa,0,Baleamentos
+19-20/11/2024,Mozambique,Nampula,4 Fase,2 Etapa,0,Baleamentos
+21-25/11/2024,Mozambique,Nampula,4 Fase,2 Etapa,0,Baleamentos
+27/11/2004,Mozambique,Nampula,4 Fase,3 Etapa,3,Baleamentos
+28/11/2024,Mozambique,Nampula,4 Fase,3 Etapa,1,Baleamentos
+29/11/2024,Mozambique,Nampula,4 Fase,3 Etapa,0,Baleamentos
+4/12/2024,Mozambique,Nampula,4 Fase,4 Etapa,21,Baleamentos
+05-09/12/2024,Mozambique,Nampula,4 Fase,4 Etapa,3,Baleamentos
+10-14/12/2024,Mozambique,Nampula,4 Fase,4 Etapa,7,Baleamentos
+23-24/12/2024,Mozambique,Nampula,V8,,11,Baleamentos
+25/12/2024,Mozambique,Nampula,V8,,6,Baleamentos
+26/12/2024,Mozambique,Nampula,V8,,26,Baleamentos
+27-29/12/2024,Mozambique,Nampula,V8,,1,Baleamentos
+21-25/10/2024,Mozambique,Nampula,1 - 2 Fase,,2,Mortes
+21-27/10/2024,Mozambique,Nampula,1 - 2 Fase,,5,Mortes
+04-05/11/2024,Mozambique,Nampula,3 Fase,,3,Mortes
+13-14/11/2024,Mozambique,Nampula,4 Fase,1 Etapa,7,Mortes
+15/11/2024,Mozambique,Nampula,4 Fase,1 Etapa,0,Mortes
+16-17/11/2024,Mozambique,Nampula,4 Fase,1 Etapa,0,Mortes
+18/11/2024,Mozambique,Nampula,4 Fase,1 Etapa,0,Mortes
+19-20/11/2024,Mozambique,Nampula,4 Fase,2 Etapa,0,Mortes
+21-25/11/2024,Mozambique,Nampula,4 Fase,2 Etapa,1,Mortes
+29/11/2024,Mozambique,Nampula,4 Fase,3 Etapa,1,Mortes
+4/12/2024,Mozambique,Nampula,4 Fase,4 Etapa,8,Mortes
+05-09/12/2024,Mozambique,Nampula,4 Fase,4 Etapa,2,Mortes
+10-14/12/2024,Mozambique,Nampula,4 Fase,4 Etapa,3,Mortes
+23-24/12/2024,Mozambique,Nampula,V8,,4,Mortes
+25/12/2024,Mozambique,Nampula,V8,,5,Mortes
+26/12/2024,Mozambique,Nampula,V8,,25,Mortes
+27-29/12/2024,Mozambique,Nampula,V8,,2,Mortes
+04-05/11/2024,Mozambique,Niassa,3 Fase,,6,Detencoes
+14/11/2024,Mozambique,Niassa,4 Fase,1 Etapa,5,Detencoes
+15/11/2024,Mozambique,Niassa,4 Fase,1 Etapa,1,Detencoes
+16-17/11/2024,Mozambique,Niassa,4 Fase,1 Etapa,0,Detencoes
+18/11/2024,Mozambique,Niassa,4 Fase,1 Etapa,2,Detencoes
+19-20/11/2024,Mozambique,Niassa,4 Fase,2 Etapa,5,Detencoes
+21-25/11/2024,Mozambique,Niassa,4 Fase,2 Etapa,1,Detencoes
+7/11/2024,Mozambique,Niassa,3 Fase,,3,Baleamentos
+23-24/12/2024,Mozambique,Niassa,V8,,1,Baleamentos
+25/12/2024,Mozambique,Niassa,V8,,0,Baleamentos
+26/12/2024,Mozambique,Niassa,V8,,0,Baleamentos
+27-29/12/2024,Mozambique,Niassa,V8,,0,Baleamentos
+7/11/2024,Mozambique,Niassa,3 Fase,,1,Mortes
+21-25/10/2024,Mozambique,Sofala,1 - 2 Fase,,47,Detencoes
+04-05/11/2024,Mozambique,Sofala,3 Fase,,2,Detencoes
+7/11/2024,Mozambique,Sofala,3 Fase,,4,Detencoes
+16-17/11/2024,Mozambique,Sofala,4 Fase,1 Etapa,22,Detencoes
+18/11/2024,Mozambique,Sofala,4 Fase,1 Etapa,6,Detencoes
+19-20/11/2024,Mozambique,Sofala,4 Fase,2 Etapa,6,Detencoes
+21-25/11/2024,Mozambique,Sofala,4 Fase,2 Etapa,19,Detencoes
+27-28/11/2024,Mozambique,Sofala,4 Fase,3 Etapa,2,Detencoes
+29/11/2024,Mozambique,Sofala,4 Fase,3 Etapa,5,Detencoes
+05-09/12/2024,Mozambique,Sofala,4 Fase,4 Etapa,22,Detencoes
+10-14/12/2024,Mozambique,Sofala,4 Fase,4 Etapa,0,Detencoes
+23-24/12/2024,Mozambique,Sofala,V8,,17,Detencoes
+25/12/2024,Mozambique,Sofala,V8,,15,Detencoes
+26/12/2024,Mozambique,Sofala,V8,,22,Detencoes
+27-29/12/2024,Mozambique,Sofala,V8,,0,Detencoes
+4/12/2024,Mozambique,Sofala,4 Fase,4 Etapa,3,Baleamentos
+05-09/12/2024,Mozambique,Sofala,4 Fase,4 Etapa,14,Baleamentos
+10-14/12/2024,Mozambique,Sofala,4 Fase,4 Etapa,0,Baleamentos
+23-24/12/2024,Mozambique,Sofala,V8,,4,Baleamentos
+25/12/2024,Mozambique,Sofala,V8,,52,Baleamentos
+26/12/2024,Mozambique,Sofala,V8,,9,Baleamentos
+27-29/12/2024,Mozambique,Sofala,V8,,3,Baleamentos
+4/12/2024,Mozambique,Sofala,4 Fase,4 Etapa,1,Mortes
+05-09/12/2024,Mozambique,Sofala,4 Fase,4 Etapa,4,Mortes
+10-14/12/2024,Mozambique,Sofala,4 Fase,4 Etapa,0,Mortes
+23-24/12/2024,Mozambique,Sofala,V8,,4,Mortes
+25/12/2024,Mozambique,Sofala,V8,,27,Mortes
+26/12/2024,Mozambique,Sofala,V8,,2,Mortes
+27-29/12/2024,Mozambique,Sofala,V8,,0,Mortes
+21-25/10/2024,Mozambique,Tete,1 - 2 Fase,,11,Detencoes
+04-05/11/2024,Mozambique,Tete,3 Fase,,1,Detencoes
+7/11/2024,Mozambique,Tete,3 Fase,,2,Detencoes
+13/11/2004,Mozambique,Tete,4 Fase,1 Etapa,1,Detencoes
+14/11/2024,Mozambique,Tete,4 Fase,1 Etapa,0,Detencoes
+15/11/2024,Mozambique,Tete,4 Fase,1 Etapa,7,Detencoes
+16-17/11/2024,Mozambique,Tete,4 Fase,1 Etapa,4,Detencoes
+18/11/2024,Mozambique,Tete,4 Fase,1 Etapa,0,Detencoes
+19-20/11/2024,Mozambique,Tete,4 Fase,2 Etapa,0,Detencoes
+21-25/11/2024,Mozambique,Tete,4 Fase,2 Etapa,10,Detencoes
+27-28/11/2024,Mozambique,Tete,4 Fase,3 Etapa,2,Detencoes
+29/11/2024,Mozambique,Tete,4 Fase,3 Etapa,0,Detencoes
+4/12/2024,Mozambique,Tete,4 Fase,4 Etapa,3,Detencoes
+05-09/12/2024,Mozambique,Tete,4 Fase,4 Etapa,1,Detencoes
+10-14/12/2024,Mozambique,Tete,4 Fase,4 Etapa,12,Detencoes
+23-24/12/2024,Mozambique,Tete,V8,,6,Detencoes
+25/12/2024,Mozambique,Tete,V8,,0,Detencoes
+26/12/2024,Mozambique,Tete,V8,,1,Detencoes
+27-29/12/2024,Mozambique,Tete,V8,,0,Detencoes
+04-05/11/2024,Mozambique,Tete,3 Fase,,2,Baleamentos
+7/11/2024,Mozambique,Tete,3 Fase,,1,Baleamentos
+10-14/12/2024,Mozambique,Tete,4 Fase,4 Etapa,2,Baleamentos
+23-24/12/2024,Mozambique,Tete,V8,,1,Baleamentos
+25/12/2024,Mozambique,Tete,V8,,1,Baleamentos
+26/12/2024,Mozambique,Tete,V8,,0,Baleamentos
+27-29/12/2024,Mozambique,Tete,V8,,0,Baleamentos
+04-05/11/2024,Mozambique,Tete,3 Fase,,1,Mortes
+7/11/2024,Mozambique,Tete,3 Fase,,1,Mortes
+10-14/12/2024,Mozambique,Tete,4 Fase,4 Etapa,1,Mortes
+23-24/12/2024,Mozambique,Tete,V8,,2,Mortes
+25/12/2024,Mozambique,Tete,V8,,0,Mortes
+26/12/2024,Mozambique,Tete,V8,,0,Mortes
+27-29/12/2024,Mozambique,Tete,V8,,0,Mortes
+04-05/11/2024,Mozambique,Zambezia,3 Fase,,37,Detencoes
+7/11/2024,Mozambique,Zambezia,3 Fase,,83,Detencoes
+13/11/2004,Mozambique,Zambezia,4 Fase,1 Etapa,2,Detencoes
+14/11/2024,Mozambique,Zambezia,4 Fase,1 Etapa,20,Detencoes
+15/11/2024,Mozambique,Zambezia,4 Fase,1 Etapa,1,Detencoes
+16-17/11/2024,Mozambique,Zambezia,4 Fase,1 Etapa,2,Detencoes
+18/11/2024,Mozambique,Zambezia,4 Fase,1 Etapa,0,Detencoes
+19-20/11/2024,Mozambique,Zambezia,4 Fase,2 Etapa,0,Detencoes
+21-25/11/2024,Mozambique,Zambezia,4 Fase,2 Etapa,0,Detencoes
+23-24/12/2024,Mozambique,Zambezia,V8,,5,Detencoes
+25/12/2024,Mozambique,Zambezia,V8,,0,Detencoes
+26/12/2024,Mozambique,Zambezia,V8,,1,Detencoes
+27-29/12/2024,Mozambique,Zambezia,V8,,0,Detencoes
+04-05/11/2024,Mozambique,Zambezia,3 Fase,,3,Baleamentos
+7/11/2024,Mozambique,Zambezia,3 Fase,,1,Baleamentos
+13-14/11/2024,Mozambique,Zambezia,4 Fase,1 Etapa,3,Baleamentos
+15/11/2024,Mozambique,Zambezia,4 Fase,1 Etapa,0,Baleamentos
+16-17/11/2024,Mozambique,Zambezia,4 Fase,1 Etapa,0,Baleamentos
+18/11/2024,Mozambique,Zambezia,4 Fase,1 Etapa,0,Baleamentos
+19-20/11/2024,Mozambique,Zambezia,4 Fase,2 Etapa,2,Baleamentos
+21-25/11/2024,Mozambique,Zambezia,4 Fase,2 Etapa,0,Baleamentos
+4/12/2024,Mozambique,Zambezia,4 Fase,4 Etapa,1,Baleamentos
+05-09/12/2024,Mozambique,Zambezia,4 Fase,4 Etapa,6,Baleamentos
+10-14/12/2024,Mozambique,Zambezia,4 Fase,4 Etapa,6,Baleamentos
+23-24/12/2024,Mozambique,Zambezia,V8,,5,Baleamentos
+25/12/2024,Mozambique,Zambezia,V8,,0,Baleamentos
+26/12/2024,Mozambique,Zambezia,V8,,0,Baleamentos
+27-29/12/2024,Mozambique,Zambezia,V8,,9,Baleamentos
+04-05/11/2024,Mozambique,Zambezia,3 Fase,,3,Mortes
+7/11/2024,Mozambique,Zambezia,3 Fase,,1,Mortes
+13-14/11/2024,Mozambique,Zambezia,4 Fase,1 Etapa,2,Mortes
+15/11/2024,Mozambique,Zambezia,4 Fase,1 Etapa,0,Mortes
+16-17/11/2024,Mozambique,Zambezia,4 Fase,1 Etapa,0,Mortes
+18/11/2024,Mozambique,Zambezia,4 Fase,1 Etapa,0,Mortes
+19-20/11/2024,Mozambique,Zambezia,4 Fase,2 Etapa,0,Mortes
+21-25/11/2024,Mozambique,Zambezia,4 Fase,2 Etapa,0,Mortes
+05-09/12/2024,Mozambique,Zambezia,4 Fase,4 Etapa,1,Mortes
+10-14/12/2024,Mozambique,Zambezia,4 Fase,4 Etapa,6,Mortes
+23-24/12/2024,Mozambique,Zambezia,V8,,4,Mortes
+25/12/2024,Mozambique,Zambezia,V8,,4,Mortes
+26/12/2024,Mozambique,Zambezia,V8,,0,Mortes
+27-29/12/2024,Mozambique,Zambezia,V8,,10,Mortes
