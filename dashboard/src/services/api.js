@@ -1,35 +1,28 @@
-const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+const BASE = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000'
 
-export async function getHealth() {
-  const r = await fetch(`${BASE_URL}/health`)
-  if (!r.ok) throw new Error('Falha no health')
-  return r.json()
+async function safeFetch(path, opts) {
+  const res = await fetch(`${BASE}${path}`, opts)
+  const text = await res.text()
+  const data = text ? JSON.parse(text) : null
+  if (!res.ok) {
+    const msg = (data && data.detail) ? data.detail : (data && data.error) ? data.error : `HTTP ${res.status}`
+    throw new Error(msg)
+  }
+  return data
 }
 
-export async function predict(payload) {
-  const r = await fetch(`${BASE_URL}/predict`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload)
-  })
-  if (!r.ok) throw new Error('Falha no predict')
-  return r.json()
+export function getHealth() {
+  return safeFetch('/health')
 }
 
-export async function getProvinces() {
-  const r = await fetch(`${BASE_URL}/provinces`)
-  if (!r.ok) throw new Error('Falha em provinces')
-  return r.json()
+export function getProvinces() {
+  return safeFetch('/provinces')
 }
 
-export async function forecast(payload) {
-  const r = await fetch(`${BASE_URL}/forecast`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload)
-  })
-  if (!r.ok) throw new Error('Falha no forecast')
-  return r.json()
+export function forecast(payload) {
+  return safeFetch('/forecast', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
 }
 
-export { BASE_URL }
+export function predict(payload) {
+  return safeFetch('/predict', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
+}
