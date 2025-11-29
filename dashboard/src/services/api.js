@@ -16,5 +16,20 @@ export async function predict(payload) {
   return r.json()
 }
 
-export { BASE_URL }
+export async function getProvinces() {
+  const r = await fetch(`${BASE_URL}/provinces`)
+  if (!r.ok) throw new Error('Falha em provinces')
+  return r.json()
+}
 
+export async function forecast(payload) {
+  const r = await fetch(`${BASE_URL}/forecast`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  })
+  if (!r.ok) throw new Error('Falha no forecast')
+  return r.json()
+}
+
+export { BASE_URL }
