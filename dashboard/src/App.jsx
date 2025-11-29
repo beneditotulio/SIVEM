@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { getHealth, getProvinces, forecast, predict } from './services/api.js'
+import { BASE, getHealth, getProvinces, forecast, predict } from './services/api.js'
 import BarChart from './components/BarChart.jsx'
 import RiskBadge from './components/RiskBadge.jsx'
 import './styles.css'
@@ -57,10 +57,39 @@ export default function App() {
     }
   }
 
+  // moved inside component so it can access state setters
+  const onReload = async () => {
+    setStatus('...')
+    try {
+      const d = await getHealth()
+      setStatus(d.status)
+    } catch {
+      setStatus('erro')
+    }
+    setLoadingProv(true)
+    try {
+      const d = await getProvinces()
+      setProvinces((d.provinces && d.provinces.length > 0) ? d.provinces : defaultProvinces)
+    } catch {
+      setProvinces(defaultProvinces)
+    } finally {
+      setLoadingProv(false)
+    }
+  }
+
+  const openReport = () => {
+    const url = `${BASE}/incidentes_report.html`
+    window.open(url, '_blank', 'noopener')
+  }
+
   return (
     <div style={{ padding: 16, fontFamily: 'sans-serif', display: 'grid', gap: 16 }}>
       <h1>SIVEM Dashboard</h1>
-      <p>API status: {status} <button onClick={onReload} style={{ marginLeft: 8 }}>Recarregar</button></p>
+      <p>
+        API status: {status}
+        <button onClick={onReload} style={{ marginLeft: 8 }}>Recarregar</button>
+        <button onClick={openReport} style={{ marginLeft: 8 }}>Relatório pré-processamento</button>
+      </p>
       <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
         <label>
           Província
@@ -119,21 +148,3 @@ export default function App() {
     </div>
   )
 }
-  const onReload = async () => {
-    setStatus('...')
-    try {
-      const d = await getHealth()
-      setStatus(d.status)
-    } catch {
-      setStatus('erro')
-    }
-    setLoadingProv(true)
-    try {
-      const d = await getProvinces()
-      setProvinces((d.provinces && d.provinces.length > 0) ? d.provinces : defaultProvinces)
-    } catch {
-      setProvinces(defaultProvinces)
-    } finally {
-      setLoadingProv(false)
-    }
-  }

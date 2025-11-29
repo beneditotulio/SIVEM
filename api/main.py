@@ -2,6 +2,7 @@ import os
 import joblib
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from typing import List, Dict, Any
 import numpy as np
@@ -12,14 +13,18 @@ MODEL_PATH = os.path.join(BASE_DIR, 'model', 'sivem_model.pkl')
 
 app = FastAPI(title="SIVEM API (dev)")
 
-# Permissive CORS para desenvolvimento local
+# CORS (ajuste conforme necessidade)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173", "http://localhost:3000", "http://127.0.0.1:3000"],
+    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Serve ficheiros estáticos do relatório (acesso: /reports/incidentes_report.html)
+# directory path is relative to api/main.py -> ../data/processed
+app.mount("/reports", StaticFiles(directory="../data/processed", html=True), name="reports")
 
 # Modelos de request (ajuste conforme o seu esquema real)
 class ForecastReq(BaseModel):
