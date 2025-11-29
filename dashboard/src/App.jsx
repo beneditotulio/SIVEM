@@ -4,6 +4,7 @@ import BarChart from './components/BarChart.jsx'
 import RiskBadge from './components/RiskBadge.jsx'
 
 export default function App() {
+  const defaultProvinces = ['Cabo Delgado','Gaza','Inhambane','Manica','Maputo','Maputo Provincia','Nampula','Niassa','Sofala','Tete','Zambezia']
   const [status, setStatus] = useState('...')
   const [result, setResult] = useState(null)
   const [error, setError] = useState(null)
@@ -21,8 +22,8 @@ export default function App() {
       .catch(() => setStatus('erro'))
     setLoadingProv(true)
     getProvinces()
-      .then(d => setProvinces(d.provinces || []))
-      .catch(() => setProvinces([]))
+      .then(d => setProvinces((d.provinces && d.provinces.length > 0) ? d.provinces : defaultProvinces))
+      .catch(() => setProvinces(defaultProvinces))
       .finally(() => setLoadingProv(false))
   }, [])
 
@@ -58,11 +59,11 @@ export default function App() {
   return (
     <div style={{ padding: 16, fontFamily: 'sans-serif', display: 'grid', gap: 16 }}>
       <h1>SIVEM Dashboard</h1>
-      <p>API status: {status}</p>
+      <p>API status: {status} <button onClick={onReload} style={{ marginLeft: 8 }}>Recarregar</button></p>
       <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
         <label>
           Província
-          <select value={province} onChange={e => setProvince(e.target.value)} style={{ marginLeft: 8 }} disabled={loadingProv || status !== 'ok'}>
+          <select value={province} onChange={e => setProvince(e.target.value)} style={{ marginLeft: 8 }} disabled={loadingProv || (status !== 'ok' && provinces.length === 0)}>
             <option value="">Selecione</option>
             {provinces.map(p => (<option key={p} value={p}>{p}</option>))}
           </select>
@@ -117,3 +118,21 @@ export default function App() {
     </div>
   )
 }
+  const onReload = async () => {
+    setStatus('...')
+    try {
+      const d = await getHealth()
+      setStatus(d.status)
+    } catch {
+      setStatus('erro')
+    }
+    setLoadingProv(true)
+    try {
+      const d = await getProvinces()
+      setProvinces((d.provinces && d.provinces.length > 0) ? d.provinces : defaultProvinces)
+    } catch {
+      setProvinces(defaultProvinces)
+    } finally {
+      setLoadingProv(false)
+    }
+  }

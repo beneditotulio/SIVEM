@@ -54,6 +54,13 @@ def load_wide():
             pass
     return df
 
+def load_raw():
+    path = os.path.join(BASE_DIR, 'data', 'raw', 'dados_de_incidentes_manifestacoes_mocambique(2024).csv')
+    if not os.path.exists(path):
+        return None
+    df = pd.read_csv(path)
+    return df
+
 @app.get('/health')
 def health():
     return {'status': 'ok'}
@@ -62,7 +69,14 @@ def health():
 def provinces():
     df = load_wide()
     if df is None:
+        df = load_raw()
+    if df is None:
         return {'provinces': []}
+    if 'country' in df.columns:
+        try:
+            df = df[df['country'].astype(str).str.lower().str.contains('mozambique')]
+        except Exception:
+            pass
     col = 'province' if 'province' in df.columns else None
     if col is None:
         return {'provinces': []}
