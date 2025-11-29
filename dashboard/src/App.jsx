@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { getHealth, getProvinces, forecast, predict } from './services/api.js'
 import BarChart from './components/BarChart.jsx'
 import RiskBadge from './components/RiskBadge.jsx'
+import './styles.css'
 
 export default function App() {
   const defaultProvinces = ['Cabo Delgado','Gaza','Inhambane','Manica','Maputo','Maputo Provincia','Nampula','Niassa','Sofala','Tete','Zambezia']

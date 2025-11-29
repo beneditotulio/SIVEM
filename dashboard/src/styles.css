@@ -1,0 +1,153 @@
+:root{
+  --bg:#f7f8fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#2563eb;
+  --danger:#ef4444;
+  --success:#16a34a;
+  --border: #e6e9ef;
+  --radius: 10px;
+  --shadow: 0 6px 18px rgba(16,24,40,0.06);
+  --gap:16px;
+}
+
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:linear-gradient(180deg,#f8fafc 0%, var(--bg) 100%);
+  color:#111827;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Layout */
+.app {
+  padding: calc(var(--gap) * 1.25);
+  display:grid;
+  gap:var(--gap);
+  max-width:1200px;
+  margin:16px auto;
+}
+
+/* Header */
+.app h1{
+  margin:0;
+  font-size:1.6rem;
+  letter-spacing: -0.2px;
+}
+.header-row{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  justify-content:space-between;
+}
+.status {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:0.95rem;
+  color:var(--muted);
+}
+.status .chip{
+  background:var(--card);
+  border:1px solid var(--border);
+  padding:6px 10px;
+  border-radius:999px;
+  box-shadow:var(--shadow);
+  font-weight:600;
+}
+
+/* Controls */
+.controls{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.controls label{
+  font-size:0.9rem;
+  color:var(--muted);
+  display:flex;
+  gap:8px;
+  align-items:center;
+}
+select, input[type="number"]{
+  padding:8px 10px;
+  border:1px solid var(--border);
+  border-radius:8px;
+  background:var(--card);
+  min-width:120px;
+}
+button{
+  background:var(--accent);
+  color:#fff;
+  border:none;
+  padding:8px 12px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+  box-shadow: 0 6px 14px rgba(37,99,235,0.12);
+}
+button[disabled]{
+  opacity:0.6;
+  cursor:not-allowed;
+  box-shadow:none;
+}
+
+/* Grid and Cards */
+.grid-2{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:var(--gap);
+}
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:16px;
+  box-shadow:var(--shadow);
+}
+.card h2{margin:0 0 8px 0; font-size:1.05rem}
+
+/* Chart area */
+.chart-wrap{
+  padding:8px 0;
+  min-height:120px;
+}
+
+/* Risk badge helpers (use from RiskBadge component) */
+.risk-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:6px 10px;
+  border-radius:999px;
+  font-weight:700;
+  color:#fff;
+  text-transform:uppercase;
+  font-size:0.75rem;
+}
+.risk-low{ background:linear-gradient(90deg,#10b981,#059669); } /* verde */
+.risk-medium{ background:linear-gradient(90deg,#f59e0b,#d97706); } /* laranja */
+.risk-high{ background:linear-gradient(90deg,#ef4444,#b91c1c); } /* vermelho */
+
+/* Result & details */
+.details{
+  margin-top:8px;
+  background:transparent;
+  font-size:0.95rem;
+  color:#111827;
+}
+.error{
+  color:var(--danger);
+  font-weight:700;
+  margin-top:8px;
+}
+
+/* Responsive */
+@media (max-width:900px){
+  .grid-2{grid-template-columns:1fr}
+  .controls{flex-direction:column;align-items:stretch}
+}
